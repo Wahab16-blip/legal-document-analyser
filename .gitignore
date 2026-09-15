@@ -1,0 +1,16 @@
+.env
+.streamlit/secrets.toml
+__pycache__/
+*.pyc
+setup_db.py
+test_db.py
+*.db
+.DS_Store
+Thumbs.db
+Notes.txt
+
+
+
+
+
+
