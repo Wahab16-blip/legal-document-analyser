@@ -71,7 +71,7 @@ def save_document(user_id, filename, file_type, extracted_text):
     cursor = conn.cursor(cursor_factory=RealDictCursor)
     try:
         cursor.execute("""
-            INSERT INTO documents (user_id, filename, file_type, extracted_text, upload_data)
+            INSERT INTO documents (user_id, filename, file_type, extracted_text, upload_date)
             VALUES (%s, %s, %s, %s, %s)
             RETURNING id
         """, (
