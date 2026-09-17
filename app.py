@@ -159,7 +159,7 @@ if page == "📄 Analyse Document":
 
     # ---- Display results if document analysed ----
     if "current_summary" in st.session_state:
-        st.markdown()
+        st.markdown("---")
 
         # ---- Summary ----
         st.subheader(f"📋 Analysis: {st.session_state['current_filename']}")
