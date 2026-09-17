@@ -149,7 +149,7 @@ def save_chunks(document_id, chunks, embeddings):
     try:
         for i, (chunk, embedding) in enumerate(zip(chunks, embeddings)):
             cursor.execute("""
-                INSERT INTO document_chucks (documnet_id, chunk_index, chunk_text, embedding)
+                INSERT INTO document_chunks (document_id, chunk_index, chunk_text, embedding)
                 VALUES (%s, %s, %s, %s)
             """, (document_id, i, chunk, json.dumps(embedding.tolist()))
             )
